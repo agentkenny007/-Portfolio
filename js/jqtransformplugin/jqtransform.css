@@ -1,0 +1,116 @@
+form.jqtransformdone label{
+	margin-top: 4px;
+	margin-right: 8px;
+	display: block;
+	float: left;
+}
+form.jqtransformdone div.rowElem{
+	clear: both;
+	padding: 4px 0px;
+}
+
+/* (Modded exclusively for checkboxes and dropdowns) */
+
+/* -------------
+ * Checkboxes
+ * ------------- */
+span.jqTransformCheckboxWrapper{
+	display: block;
+	float: left;
+	margin-top: 5px;
+}
+a.jqTransformCheckbox:not(.label) {
+	background: ;
+	vertical-align: middle;
+	height: 19px;
+	width: 19px;
+	display: block;
+	-webkit-transition: all 0.05 ease;
+	-moz-transition: all 0.05 ease;
+	-o-transition: all 0.05 ease;
+}
+a.jqTransformChecked:not(.label) { background-position: bottom;}
+
+/* -------------
+ * Selects
+ * ------------- */
+.jqTransformSelectWrapper {
+	width: 45px;
+	position: relative;
+	height: ;
+	float:left;
+}
+.widget-area li:nth-child(odd) .jqTransformSelectWrapper { background: ; }
+.widget-area li:nth-child(even) .jqTransformSelectWrapper { background: ; }
+
+.jqTransformSelectWrapper div span {
+	font-size: 12px;
+	float: none;
+	position: absolute;
+	white-space: nowrap;
+	height: 31px;
+	line-height: 15px;
+	padding: 9px 0 0 7px;
+	overflow: hidden;
+	cursor: pointer;
+	color: ;
+	text-shadow: ;
+}
+
+.jqTransformSelectWrapper  a.jqTransformSelectOpen {
+	display: block;
+	position: absolute;
+	right: 0px;
+	width: 35px;
+	height: 31px;
+}
+.widget-area li:nth-child(odd) .jqTransformSelectWrapper  a.jqTransformSelectOpen { background: ; }
+.widget-area li:nth-child(even) .jqTransformSelectWrapper  a.jqTransformSelectOpen { background: ; }
+
+.jqTransformSelectWrapper ul {
+	position: absolute;
+	width: 43px;
+	top: 30px;
+	left: 0px;
+	list-style: none;
+	background: ;
+	border-left: ;
+	border-right: ;
+	border-bottom: ;
+	display: none;
+	margin: 0px;
+	padding: 0px;
+	height: 200px;
+	overflow: auto;
+	overflow-y: auto;
+	z-index: 600;
+}
+
+.jqTransformSelectWrapper ul a {
+	display: block;
+	padding: 1px 0;
+	text-decoration: none;
+	text-align: center;
+	color: #333;
+	background: ;
+	-webkit-box-shadow: ;
+	-moz-box-shadow: ;
+	box-shadow: ; 
+	font-size: 12px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.widget-area li:nth-child(odd) .jqTransformSelectWrapper ul a.selected,
+.widget-area li:nth-child(even) .jqTransformSelectWrapper ul a.selected {  }
+
+.widget-area li:nth-child(odd) .jqTransformSelectWrapper ul a:hover,
+.widget-area li:nth-child(even) .jqTransformSelectWrapper ul a.selected:hover {  }
+.widget-area li:nth-child(even) .jqTransformSelectWrapper ul a:hover,
+.widget-area li:nth-child(odd) .jqTransformSelectWrapper ul a.selected:hover {  }
+
+/* -------------
+ * Hidden - used to hide the original form elements
+ * ------------- */
+.jqTransformHidden {display: none;}

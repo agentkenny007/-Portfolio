@@ -1,0 +1,101 @@
+/*  
+Theme Name: Kreativ Kenn Complete
+Theme URI: 
+Description: Complete Layout for Kreativ Kenn Website
+Author: Kreativ Kenn
+Author URI: kreativkenn.com
+Version: 1.0
+Tags: 
+Date: 10/04/10 6:15pm
+.
+This work is released under GNU General Public License, version 2 (GPL).
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+.
+*/
+
+/* Reset default browser styles */
+@import url('styles/reset.css');
+
+/* Rebuild default browser styles */
+@import url('styles/rebuild.css');
+
+/* Basic WordPress Styles */
+@import url('styles/wp.css');
+
+/* Import a basic layout */
+@import url('styles/main.css');
+
+/* Import Google Web Fonts */
+@import url(http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic);
+
+html, body { margin: 0; position: relative; }
+body { font: 16px 'Century Gothic', 'Muli', Helvetica; color: white; text-shadow: 0 1px 2px #000; background: ; }
+p { margin: 1em 0px; }
+a { color: #ff7f00; text-decoration: none;
+	-webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; }
+a:hover { color: #e00038; }
+blockquote {  }	
+blockquote blockquote { margin: ; }
+blockquote a {  }
+code { font: ; }
+.wp-caption, .gallery-caption { padding: ; }
+.wp-caption img, .gallery-caption img { padding: 0px; }
+img.wp-smiley {  }
+small { font-size: small; }	
+::selection, ::-moz-selection { background: #8f88ea; }
+
+/* ******* Century Gothic (Regular) ***** */
+
+@font-family { /* IE Rule */
+  font-family: "Century Gothic";
+  src: url("GOTHIC.eot");
+}
+
+@font-family { /* non-IE rule */
+  font-family: "Century Gothic";
+  src: url("GOTHIC.TTF") format("truetype");
+}
+
+/* ******* Century Gothic (Bold) ***** */
+
+@font-family { /* IE Rule */
+  font-family: "Century Gothic";
+  src: url("GOTHICB.eot");
+  font-weight: bold;
+}
+
+@font-family { /* non-IE rule */
+  font-family: "Century Gothic";
+  src: url("GOTHICB.TTF") format("truetype");
+  font-weight: bold;
+}
+
+/* ******* Century Gothic (Italic) ***** */
+
+@font-family { /* IE Rule */
+  font-family: "Century Gothic";
+  src: url("GOTHICI.eot");
+  font-style: italic;
+}
+
+@font-family { /* non-IE rule */
+  font-family: "Century Gothic";
+  src: url("GOTHICI.TTF") format("truetype");
+  font-style: italic;
+}
+
+/* ******* Century Gothic (Bold-Italic) ***** */
+
+@font-family { /* IE rule */
+  font-family: "Century Gothic";
+  src: url("GOTHICBI.eot");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-family { /* non-IE rule */
+  font-family: "Century Gothic";
+  src: url("GOTHICBI.TTF") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
