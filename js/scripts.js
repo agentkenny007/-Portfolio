@@ -7,24 +7,24 @@ $(document).ready(function() {
 
 	$('#contact-form').submit(function() {
 		$('.contact .loading').fadeIn();
-		$(this).children().each(function(){ $(this).removeClass('error'); });
+		$(this).children().each(function() { $(this).removeClass('error'); });
 		$.ajax({
 		   type: 'POST',
 		   url: blog_url + '/wp-content/themes/KreativKennSplash/contact.php',
 		   data: $(this).serialize(),
-		   success: function(data){
+		   success: function(data) {
 				$('.contact .loading').fadeOut();
 				if (data.name_error) $('#contact_name').addClass('error');
 				if (data.email_error) $('#contact_email').addClass('error');
 				if (data.subject_error) $('#contact_subject').addClass('error');
 				if (data.message_error) $('#contact_message').addClass('error');
-				if (data.sent) $('.contact .sent').fadeIn(function(){
+				if (data.sent) $('.contact .sent').fadeIn(function() {
 					$(this).delay(1000).fadeOut('slow');
-					$('#contact-form').children().not('#submit').each(function(){ $(this).val(''); });
+					$('#contact-form').children().not('#submit').each(function() { $(this).val(''); });
 				});
-				else $('.contact .sent-error').fadeIn(function(){ $(this).delay(1000).fadeOut('slow'); });
+				else $('.contact .sent-error').fadeIn(function() { $(this).delay(1000).fadeOut('slow'); });
 			},
-			error: function(){
+			error: function() {
 				alert('error!');
 			},
 			dataType: 'json'
@@ -33,16 +33,21 @@ $(document).ready(function() {
 	});
 
 	/* Interval Functions */
-	let i = 0, spinStrands = true, loading = false, selectedStrand = 0, strandSelected = false;
-	setInterval(function(){
+	let i = 0, cleanHelix = false, spinStrands = true, loading = false, dirtyStrand = 0, selectedStrand = 0, strandSelected = false;
+	setInterval(function() {
+		if (cleanHelix) $('.strand._' + dirtyStrand++).css('background-position', 0);
+		if (dirtyStrand === 19) {
+			cleanHelix = false;
+			dirtyStrand = 0;
+		}
 		if (spinStrands) {
-			$('.strand').each(function(){
+			$('.strand').each(function() {
 				let strandPosition = $(this).css('backgroundPosition').split(' ')[0].replace(/[^0-9-]/g, '');
 				if (strandPosition == -7650) strandPosition = 450;
 				$(this).css('background-position', strandPosition - 450);
 			});
 		} else if (strandSelected) {
-			if (selectedStrand !== 0 && selectedStrand !== 17){
+			if (selectedStrand !== 0 && selectedStrand !== 17) {
 				let prevStrandPos = -8550, nextStrandPos = 450;
 				// preceding strands
 				for (var i = selectedStrand; i >= 0; i--)
@@ -58,17 +63,32 @@ $(document).ready(function() {
 			if (i == -4500) i = 0;
 		}
 	}, 100);
-	$('.homepage.helix').animate({ 'height' : '120%', 'top' : '-10%' }, 4500, "easeOutCirc");
-	$('.homepage.helix .selector').mouseenter(function(){
-		spinStrands = false;
-		selectedStrand  = Number($(this).attr('id'));
-		if (selectedStrand !== 17) $(`.homepage.helix .strand._${selectedStrand + 1}`).addClass('selected');
-		strandSelected = true;
-	}).mouseleave(function(){
-		spinStrands = true;
-		$('.homepage.helix .selected.strand').css('background-position', 0).removeClass('selected');
-		strandSelected = false;
-	});
+	$('.homepage.helix')
+		.animate({ 'height' : '120%', 'top' : '-10%' }, 4500, "easeOutCirc")
+		.find('.selector').mousedown(function(){
+			let activeStrand = Number($(this).attr('id')) + 1;
+			$('.strand._' + activeStrand).addClass('active');
+		}).mouseenter(function() {
+			cleanHelix = spinStrands = false;
+			dirtyStrand = 0;
+			selectedStrand  = Number($(this).attr('id'));
+			if (selectedStrand !== 17) $(`.homepage.helix .strand._${selectedStrand + 1}`).addClass('selected');
+			strandSelected = true;
+		}).mouseleave(function() {
+			let strandPosition = Number($('.strand._1').css('backgroundPosition').split(' ')[0].replace(/[^0-9-]/g, ''));
+			spinStrands = true;
+			for (var i = 2; i < 19; i++) {
+				strandPosition -= 450;
+				let position = Number($('.strand._' + i).css('backgroundPosition').split(' ')[0].replace(/[^0-9-]/g, ''));
+				if (position !== strandPosition - 900) { cleanHelix = true; break; }
+				if (strandPosition === -8100) strandPosition = 0;
+			}
+			$('.homepage.helix .selected.strand').css('background-position', 0).removeClass('selected');
+			strandSelected = false;
+		}).mouseup(function(){
+			let activeStrand = Number($(this).attr('id')) + 1;
+			$('.strand._' + activeStrand).removeClass('active');
+		});
 
 	let firing = false; // prevents overloading of window.scroll function
 	$(window).resize(function() {
