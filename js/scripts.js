@@ -31,32 +31,32 @@ function animateHelix(){
 $(document)
 	.on('mousedown', '.helix .selector', function(){
 		var activeStrand = Number($(this).attr('id')) + 1;
-		$('.homepage.helix .strand._' + activeStrand).addClass('active'); })
+		$('.helix .strand._' + activeStrand).addClass('active'); })
 	.on('mouseenter', '.helix .selector', function(){
 		cleanHelix = spinStrands = false;
 		dirtyStrand = 0;
 		selectedStrand  = Number($(this).attr('id'));
-		if (selectedStrand !== 17) $(`.homepage.helix .strand._${selectedStrand + 1}`).addClass('selected');
+		if (selectedStrand !== 17) $(`.helix .strand._${selectedStrand + 1}`).addClass('selected');
 		strandSelected = true; })
 	.on('mouseleave', '.helix', function(){
-		var strandPosition = Number($('.homepage.helix .strand._1').css('backgroundPosition').split(' ')[0].replace(/[^0-9-]/g, ''));
+		var strandPosition = Number($('.helix .strand._1').css('backgroundPosition').split(' ')[0].replace(/[^0-9-]/g, ''));
 		for (var i = 2; i < 19; i++){
-			var position = Number($('.homepage.helix .strand._' + i).css('backgroundPosition').split(' ')[0].replace(/[^0-9-]/g, ''));
+			var position = Number($('.helix .strand._' + i).css('backgroundPosition').split(' ')[0].replace(/[^0-9-]/g, ''));
 			strandPosition -= 450;
 			if (strandPosition === -8100) strandPosition = 0;
 			if (position !== strandPosition){ cleanHelix = true; break; }
 		}
-		$('.homepage.helix .selected.strand').css('background-position', 0).removeClass('selected');
+		$('.helix .selected.strand').css('background-position', 0).removeClass('selected');
 		strandSelected = false;
 		spinStrands = true; })
 	.on('mouseleave', '.helix .selector', function(){
-		$('.homepage.helix .selected.strand').css('background-position', 0).removeClass('selected'); })
+		$('.helix .selected.strand').css('background-position', 0).removeClass('selected'); })
 	.on('mouseup', '.helix .selector', function(){
 	   var activeStrand = Number($(this).attr('id')) + 1;
-	   $('.homepage.helix .strand._' + activeStrand).removeClass('active'); })
+	   $('.helix .strand._' + activeStrand).removeClass('active'); })
 	.on('vmouseup', '.helix', function(e){
 		spinStrands = true;
-		$('.homepage.helix .selected.strand').css('background-position', 0).removeClass('selected');
+		$('.helix .selected.strand').css('background-position', 0).removeClass('selected');
 		strandSelected = false; })
 	.on('vmousemove', '.helix', function(e){
 		cleanHelix = spinStrands = false;
@@ -65,8 +65,8 @@ $(document)
 		selectedStrand = strand - 1;
 		strandSelected = true;
 		if (!$('.strand._' + strand).hasClass('selected')){
-			$('.homepage.helix .selected.strand').removeClass('selected');
-			$('.homepage.helix .strand._' + strand).addClass('selected');
+			$('.helix .selected.strand').removeClass('selected');
+			$('.helix .strand._' + strand).addClass('selected');
 		} })
 	.ready(function(){
 		requestAnimationFrame(animateHelix);
@@ -130,5 +130,5 @@ $(document)
         return setTimeout(function(){ callback(mark = callAtTime); }, callAtTime - now);
     };
 
-	window[caf] = CAF === TRUE ? window[CAF] : !!CAF ? CAF : function(id){ window.clearTimeout(id); };
+	window[caf] = CAF === true window[CAF] : !!CAF ? CAF : function(id){ window.clearTimeout(id); };
 }(this, raf, caf));
