@@ -8,7 +8,7 @@ body { background: white; }
 #wrapper { position: relative; width: 100%; height: 100%; }
 #logo { position: fixed; left: 0; top: 0; width: 61.8%; height: 100%; }
 #logo img { position: absolute; top: 50%; left: 50%; max-width: 100%; max-height: 100%; display: none; }
-#main { position: absolute; width: 100%; height: 100%; max-width: 1920px; max-height: 1200px; }
+#main { position: absolute; width: 100%; height: 100%;/* max-width: 1920px; max-height: 1200px;*/ }
 .under-construction { display: block; width: 278px; height: 0; padding-top: 72px; overflow: hidden; background: url(../images/under-construction.png) no-repeat; }
 
 img.background { position: fixed; width: 100%; height: 100%;  }
@@ -47,7 +47,7 @@ img.grid { position: fixed; top: 61.8%; width: 100%; }
 .homepage.helix .selected.strand.active { transition: none;
 	-webkit-filter: drop-shadow(0 10px 5px violet);
 	filter: drop-shadow(0 -10px 55px black); }
-.homepage.helix .selector { cursor: pointer; position: absolute; left: 75px; width: 300px; height: 35px; margin-top: -3%; z-index: 450; }
+.homepage.helix .selector { cursor: pointer; position: absolute; left: 75px; width: 300px; height: 35px; height: 5.555%; margin-top: -3%; z-index: 450; }
 .homepage.helix .selector._0 { top: 0; }
 .homepage.helix .selector._1 { top: 5.555%; }
 .homepage.helix .selector._2 { top: 11.11%; }
@@ -66,6 +66,21 @@ img.grid { position: fixed; top: 61.8%; width: 100%; }
 .homepage.helix .selector._15 { top: 83.325%; }
 .homepage.helix .selector._16 { top: 88.88%; }
 .homepage.helix .selector._17 { top: 94.435%; }
+
+.platform {
+	position: absolute;
+	top: 65%;
+	bottom: 0;
+	width: 100%;
+	background: rgba(99,99,99,1);
+	background: -moz-linear-gradient(top, rgba(99,99,99,1) 0%, rgba(99,99,99,1) 36%, rgba(36,36,36,1) 99%, rgba(36,36,36,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(99,99,99,1)), color-stop(36%, rgba(99,99,99,1)), color-stop(99%, rgba(36,36,36,1)), color-stop(100%, rgba(36,36,36,1)));
+	background: -webkit-linear-gradient(top, rgba(99,99,99,1) 0%, rgba(99,99,99,1) 36%, rgba(36,36,36,1) 99%, rgba(36,36,36,1) 100%);
+	background: -o-linear-gradient(top, rgba(99,99,99,1) 0%, rgba(99,99,99,1) 36%, rgba(36,36,36,1) 99%, rgba(36,36,36,1) 100%);
+	background: -ms-linear-gradient(top, rgba(99,99,99,1) 0%, rgba(99,99,99,1) 36%, rgba(36,36,36,1) 99%, rgba(36,36,36,1) 100%);
+	background: linear-gradient(to bottom, rgba(99,99,99,1) 0%, rgba(99,99,99,1) 36%, rgba(36,36,36,1) 99%, rgba(36,36,36,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', endColorstr='#242424', GradientType=0 );
+}
 
 .contact { position: relative; width: 100%; }
 .contact input:not([type='submit']), .contact textarea { width: 95%; max-width: 95%; padding: 3px 10px; border: 1px solid rgba(255, 255, 255, .35); background: rgba(255, 255, 255, .15); font: 20px 'Century Gothic', 'Muli', Helvetica; text-shadow: 0 1px 1px rgba(0, 0, 0, .65); margin: 2px;
