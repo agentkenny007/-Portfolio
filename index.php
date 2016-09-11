@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 		<img class="background" src="<?php echo get_template_directory_uri(); ?>/images/background.jpg" />
-		<img class="grid" src="<?php echo get_template_directory_uri(); ?>/images/homepage-grid.png" />
+		<div class="platform">
+			<img class="grid" src="<?php echo get_template_directory_uri(); ?>/images/homepage-grid.png" />
+		</div>
 		<div class="homepage helix" style="top: -1000%; height: 1000%;">
 			<div class="strand _1"></div>
 			<div class="strand _2"></div>
