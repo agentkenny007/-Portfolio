@@ -1,5 +1,5 @@
 /* Declare Variables */
-var i = 0, caf = 'cancelAnimationFrame', cleanHelix = false, dirtyStrand = 0, loading = false, raf = 'requestAnimationFrame', selectedStrand = 0, spinStrands = true, strandSelected = false;
+var i = 0, s, t, caf = 'cancelAnimationFrame', cleanHelix = false, dirtyStrand = 0, loading = false, raf = 'requestAnimationFrame', scrolling = false; selectedStrand = 0, spinStrands = true, strandSelected = false;
 
 /* Declare Functions */
 function animateHelix(){
@@ -29,6 +29,7 @@ function animateHelix(){
 }
 
 $(document)
+	.on('mousedown', function(){ clearTimeout(t); s.stopAnimateTo(); })
 	.on('mousedown', '.helix .selector', function(){
 		var activeStrand = Number($(this).attr('id')) + 1;
 		$('.helix .strand._' + activeStrand).addClass('active'); })
@@ -72,6 +73,8 @@ $(document)
 		requestAnimationFrame(animateHelix);
 		$('.helix').animate({ 'height' : '120%', 'top' : '-10%' }, 4500, 'easeOutCirc');
 
+		s = skrollr.init({ skrollrBody: 'wrapper' });
+
 		/* Swift smack on the wrist for IE users */
 		// $.browser.msie ? $('body').prepend('<div class='crap-browser-warning'>So sorry, this site just doesn\'t DO Internet Explorer. If this webpage looks sort of crappy (fingers crossed), it\'s probably because you\'re using an old and buggy browser. Actually, that IS the ONLY reason this page would look bad EVER. <br>Your browser sucks. <strong>{:/</strong><br><a href='http://www.google.com/chrome/' title='The quickest, most elegant, and least harmful browser to date.'>Consider a much safer browser</a> <span>(<- get a clue, click here, <u>now</u>)</span> or <a href='http://www.microsoft.com/windows/internet-explorer'>join this crappy fanclub.</a></div>') : '';
 
@@ -109,6 +112,13 @@ $(document)
 				'margin-left' : $('#logo img').width() * -0.5
 			});
 		}).scroll(function(){
+			console.log($(window).scrollTop());
+			if (scrolling){ alert('scrolling'); scrolling = false; }
+			if (t) clearTimeout(t);
+			t = setTimeout(function(){
+				if ($(window).scrollTop() < 550) s.animateTo(0, { duration: 1500, easing: 'bounce' });
+				else s.animateTo(1000, { duration: 750, easing: 'outCubic' });
+			}, 750);
 			if (!firing){
 				firing = true;
 				setTimeout(function(){
@@ -130,5 +140,5 @@ $(document)
         return setTimeout(function(){ callback(mark = callAtTime); }, callAtTime - now);
     };
 
-	window[caf] = CAF === true window[CAF] : !!CAF ? CAF : function(id){ window.clearTimeout(id); };
+	window[caf] = CAF === true ? window[CAF] : !!CAF ? CAF : function(id){ window.clearTimeout(id); };
 }(this, raf, caf));

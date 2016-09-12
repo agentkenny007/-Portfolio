@@ -28,6 +28,7 @@
  <!-- <script src="<?php echo get_template_directory_uri(); ?>/js/jQuery.js"></script> -->
  <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.easing.1.3.js"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/js/skrollr.min.js"></script>
  <script type="text/javascript"><?php echo 'var blog_url = \''.get_bloginfo('url').'\';'; ?></script>
 </head>
 <body>
