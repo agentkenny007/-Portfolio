@@ -123,13 +123,17 @@ $(document)
 			});
 		}).scroll(function(){
 			console.log($(window).scrollTop());
-			if (scrolling){ alert('scrolling'); scrolling = false; }
 			if (t) clearTimeout(t);
-			t = setTimeout(function(){
+			if (!scrolling) t = setTimeout(function(){
 				if ($(window).scrollTop() < 550) s.animateTo(0, { duration: 1500, easing: 'outCubic' });
-				else if ($(window).scrollTop() < 1250) s.animateTo(1000, { duration: 750, easing: 'bouncer' });
-				else if ($(window).scrollTop() < 1650) s.animateTo(1400, { duration: 750, easing: 'bouncer' });
-				else if ($(window).scrollTop() < 2200) s.animateTo(1800, { duration: 750, easing: 'bouncer' });
+				else if ($(window).scrollTop() < 1250) s.animateTo(1000, { duration: 1250, easing: 'bouncer' });
+				else if ($(window).scrollTop() < 1650) s.animateTo(1400, { duration: 1250, easing: 'bouncer' });
+				else if ($(window).scrollTop() < 2050) s.animateTo(1800, { duration: 1250, easing: 'bouncer' });
+				else if ($(window).scrollTop() < 2450) s.animateTo(2200, { duration: 1250, easing: 'bouncer' });
+				else if ($(window).scrollTop() < 2850) s.animateTo(2600, { duration: 1250, easing: 'bouncer' });
+				else if ($(window).scrollTop() < 3250) s.animateTo(3000, { duration: 1250, easing: 'bouncer' });
+				else if ($(window).scrollTop() < 3650) s.animateTo(3400, { duration: 1250, easing: 'bouncer' });
+				else if ($(window).scrollTop() < 4050) s.animateTo(3800, { duration: 1250, easing: 'bouncer' });
 			}, 750);
 			if (!firing){
 				firing = true;
