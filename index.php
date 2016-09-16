@@ -62,6 +62,46 @@
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/images/ugwuh.png" />
 		</div>
+		<div class="item-shadow h"
+			data-0="display: none;"
+			data-3500="display: block;"
+			data-3550="opacity: 0; width: 50%;"
+			data-3800="opacity: 1; width: 61.128049%; right: 32.6%; bottom: 25%;"
+			data-4125="right: 100%; bottom: 10%;">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-shadow.png" />
+		</div>
+		<div class="item-shadow g"
+			data-0="display: none;"
+			data-3100="display: block;"
+			data-3150="opacity: 0; width: 50%;"
+			data-3400="opacity: 1; width: 61.128049%; right: 32.6%; bottom: 25%;"
+			data-3725="right: 100%; bottom: 10%;">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-shadow.png" />
+		</div>
+		<div class="item-shadow f"
+			data-0="display: none;"
+			data-2700="display: block;"
+			data-2750="opacity: 0; width: 50%;"
+			data-3000="opacity: 1; width: 61.128049%; right: 32.6%; bottom: 25%;"
+			data-3325="right: 100%; bottom: 10%;">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-shadow.png" />
+		</div>
+		<div class="item-shadow e"
+			data-0="display: none;"
+			data-2300="display: block;"
+			data-2350="opacity: 0; width: 50%;"
+			data-2600="opacity: 1; width: 61.128049%; right: 32.6%; bottom: 25%;"
+			data-2925="right: 100%; bottom: 10%;">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-shadow.png" />
+		</div>
+		<div class="item-shadow d"
+			data-0="display: none;"
+			data-1900="display: block;"
+			data-1950="opacity: 0; width: 50%;"
+			data-2200="opacity: 1; width: 61.128049%; right: 32.6%; bottom: 25%;"
+			data-2525="right: 100%; bottom: 10%;">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-shadow.png" />
+		</div>
 		<div class="item-shadow c"
 			data-0="display: none;"
 			data-1500="display: block;"
@@ -85,6 +125,46 @@
 			data-1000="opacity: 1; width: 61.128049%; right: 32.6%; bottom: 25%;"
 			data-1325="right: 100%; bottom: 10%;">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-shadow.png" />
+		</div>
+		<div class="item h"
+			data-0="display: none;"
+			data-3400="width: 30%; bottom: 100%; -webkit-box-reflect: below 350% linear-gradient(transparent 99%, rgba(255, 255, 255, 0)); display: block;"
+			data-3800="width: 50%; bottom: 25%; right: 38.2%; -webkit-box-reflect: below -18% linear-gradient(transparent 60%, rgba(255, 255, 255, 1));"
+			data-4100="width: 60%; right: 100%; bottom: 10%; display: none;">
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemh-screenshot.gif" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
+		</div>
+		<div class="item g"
+			data-0="display: none;"
+			data-3000="width: 30%; bottom: 100%; -webkit-box-reflect: below 350% linear-gradient(transparent 99%, rgba(255, 255, 255, 0)); display: block;"
+			data-3400="width: 50%; bottom: 25%; right: 38.2%; -webkit-box-reflect: below -18% linear-gradient(transparent 60%, rgba(255, 255, 255, 1));"
+			data-3700="width: 60%; right: 100%; bottom: 10%; display: none;">
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemg-screenshot.gif" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
+		</div>
+		<div class="item f"
+			data-0="display: none;"
+			data-2600="width: 30%; bottom: 100%; -webkit-box-reflect: below 350% linear-gradient(transparent 99%, rgba(255, 255, 255, 0)); display: block;"
+			data-3000="width: 50%; bottom: 25%; right: 38.2%; -webkit-box-reflect: below -18% linear-gradient(transparent 60%, rgba(255, 255, 255, 1));"
+			data-3300="width: 60%; right: 100%; bottom: 10%; display: none;">
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemf-screenshot.gif" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
+		</div>
+		<div class="item e"
+			data-0="display: none;"
+			data-2200="width: 30%; bottom: 100%; -webkit-box-reflect: below 350% linear-gradient(transparent 99%, rgba(255, 255, 255, 0)); display: block;"
+			data-2600="width: 50%; bottom: 25%; right: 38.2%; -webkit-box-reflect: below -18% linear-gradient(transparent 60%, rgba(255, 255, 255, 1));"
+			data-2900="width: 60%; right: 100%; bottom: 10%; display: none;">
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/iteme-screenshot.gif" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
+		</div>
+		<div class="item d"
+			data-0="display: none;"
+			data-1800="width: 30%; bottom: 100%; -webkit-box-reflect: below 350% linear-gradient(transparent 99%, rgba(255, 255, 255, 0)); display: block;"
+			data-2200="width: 50%; bottom: 25%; right: 38.2%; -webkit-box-reflect: below -18% linear-gradient(transparent 60%, rgba(255, 255, 255, 1));"
+			data-2500="width: 60%; right: 100%; bottom: 10%; display: none;">
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemd-screenshot.gif" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
 		</div>
 		<div class="item c"
 			data-0="display: none;"
