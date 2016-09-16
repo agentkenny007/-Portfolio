@@ -73,7 +73,17 @@ $(document)
 		requestAnimationFrame(animateHelix);
 		$('.helix').animate({ 'height' : '120%', 'top' : '-10%' }, 4500, 'easeOutCirc');
 
-		s = skrollr.init({ skrollrBody: 'wrapper' });
+		// s = skrollr.init({ skrollrBody: 'wrapper' });
+		s = skrollr.init({
+			easing: {
+				bouncer: function (p) {
+					return 95.3925000000001*(p*p*p*p*p) - 259.43*(p*p*p*p) + 254.08*(p*p*p) - 106.79*(p*p) + 17.7475*p;
+				},
+		        inverted: function(p) {
+		            return 1 - p;
+		        }
+		    }
+		});
 
 		/* Swift smack on the wrist for IE users */
 		// $.browser.msie ? $('body').prepend('<div class='crap-browser-warning'>So sorry, this site just doesn\'t DO Internet Explorer. If this webpage looks sort of crappy (fingers crossed), it\'s probably because you\'re using an old and buggy browser. Actually, that IS the ONLY reason this page would look bad EVER. <br>Your browser sucks. <strong>{:/</strong><br><a href='http://www.google.com/chrome/' title='The quickest, most elegant, and least harmful browser to date.'>Consider a much safer browser</a> <span>(<- get a clue, click here, <u>now</u>)</span> or <a href='http://www.microsoft.com/windows/internet-explorer'>join this crappy fanclub.</a></div>') : '';
@@ -116,8 +126,10 @@ $(document)
 			if (scrolling){ alert('scrolling'); scrolling = false; }
 			if (t) clearTimeout(t);
 			t = setTimeout(function(){
-				if ($(window).scrollTop() < 550) s.animateTo(0, { duration: 1500, easing: 'bounce' });
-				else s.animateTo(1000, { duration: 750, easing: 'outCubic' });
+				if ($(window).scrollTop() < 550) s.animateTo(0, { duration: 1500, easing: 'outCubic' });
+				else if ($(window).scrollTop() < 1250) s.animateTo(1000, { duration: 750, easing: 'bouncer' });
+				else if ($(window).scrollTop() < 1650) s.animateTo(1400, { duration: 750, easing: 'bouncer' });
+				else if ($(window).scrollTop() < 2200) s.animateTo(1800, { duration: 750, easing: 'bouncer' });
 			}, 750);
 			if (!firing){
 				firing = true;

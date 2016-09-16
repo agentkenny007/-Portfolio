@@ -4,16 +4,20 @@ DESCRIPTION: Three-column fluid layout with two sidebars on both sides of conten
 */
 
 body, html { height: 100%; }
-body { background: white; }
+body { background: url(../images/gradient.png) fixed 0/1px 120% repeat-x; }
 #wrapper { position: relative; width: 100%; height: 100%; }
 #logo { position: fixed; left: 0; top: 0; width: 61.8%; height: 100%; }
 #logo img { position: absolute; top: 50%; left: 50%; max-width: 100%; max-height: 100%; display: none; }
 #main { position: absolute; width: 100%; height: 100%;/* max-width: 1920px; max-height: 1200px;*/ }
 .under-construction { display: block; width: 278px; height: 0; padding-top: 72px; overflow: hidden; background: url(../images/under-construction.png) no-repeat; }
 
-img { max-width: 100%; }
+img { position: relative; max-width: 100%;
+	-webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 img.background { position: fixed; width: 100%; height: 100%; z-index: -2; }
-img.grid { position: fixed; top: 61.8%; width: 100%; }
+
+.grid { position: fixed; top: 61.8%; width: 100%; }
+.grid .raised-edge { position: absolute; bottom: 0; display: block; width: 100%; height: 12.6531%; z-index: 3; }
+.raised-edge { position: fixed; top: 61.8%; margin-top: 22.34375vw; width: 100%; height: 0; height: calc(25.5vw * 0.1265); z-index: 2; }
 
 .helix { position: fixed; left: 61.8%; top: -10%; width: 450px; height: 120%; z-index: 400; }
 .helix.right { left: 100%; margin-left: -255px; }
@@ -124,6 +128,12 @@ img.grid { position: fixed; top: 61.8%; width: 100%; }
 	width: 100%;
     bottom: -86%;
 }
+.first-name-shadow, .last-name-shadow {
+	position: absolute;
+	width: 100%;
+    bottom: -26%;
+	left: -0.5%;
+}
 .last-name {
 	position: fixed;
     width: 50%;
@@ -134,6 +144,35 @@ img.grid { position: fixed; top: 61.8%; width: 100%; }
 	position: absolute;
 	width: 100%;
     bottom: -83.75%;
+}
+.name {
+	position: fixed;
+	width: 35%;
+	left: 10%;
+	top: 61.8%;
+}
+
+.item {
+	display: none;
+	position: fixed;
+	width: 50%;
+	right: 38.2%;
+	bottom: 25%;
+	-webkit-box-reflect: below -18% -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent) , to(rgba(250, 250, 250, 1)));
+}
+.item .screenshot {
+	position: absolute;
+    left: 3.963415%;
+	top: 4.08163265%;
+    width: 92.0731707%;
+}
+.item-shadow {
+	display: none;
+	position: fixed;
+	width: 61.128049%;
+	bottom: 25%;
+	right: 32.6%;
+	margin-bottom: -4.5%;
 }
 
 #header, #footer { position: relative; z-index: 5000; }
