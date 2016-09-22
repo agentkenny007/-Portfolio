@@ -9,6 +9,8 @@
 			data-5300="display: none;"></div>
 		<div class="parallax"
 			data-0="display: block;"
+			data-3400="opacity: 1;"
+			data-4100="opacity: 0;"
 			data-4450="display: none;"></div>
 		<img class="background" data-0="opacity: 1;" data-800="opacity: 0; display: block;" src="<?php echo get_template_directory_uri(); ?>/images/background.jpg" />
 		<div class="backlight"
@@ -229,10 +231,25 @@
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/worki-screenshot.gif" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/worki-screenshot-overlay.png" />
 		</div>
+		<div class="work-i-links"
+			data-0="display: none;"
+			data-4400="display: block; left: -30%;"
+			data-4700="left: 20%;">
+			<a class="work-i-link"
+				href="http://grapevine.surge.sh/"
+				target="_blank"
+				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/worki-external-link.png" /></a>
+			<a class="work-i-github"
+				href="https://github.com/Grapevine-App/"
+				target="_blank"
+				title="open github repo in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/worki-github-link.png" /></a>
+		</div>
 		<div class="work-ii-background"
 			data-0="display: none;"
 			data-4750="display: block; opacity: 0;"
-			data-5300="opacity: 1;"></div>
+			data-5300="opacity: 1;"
+			data-6400="opacity: 1;"
+			data-6800="opacity: 0;"></div>
 		<div class="pyramids"
 			data-0="display: none;"
 			data-4750="display: block; bottom: -32.08334vw;"
@@ -256,6 +273,12 @@
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/workii-screenshot.gif" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/workii-screenshot-overlay.png" />
 		</div>
+		<a class="work-ii-link"
+			data-5100="left: -15%;"
+			data-5750="left: 4%;"
+			href="http://bathshebabeauty.com/"
+			target="_blank"
+			title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/workii-external-link.png" /></a>
 		<div class="work-iii-background"
 			data-0="display: none;"
 			data-6200="display: block; left: 100%;"
@@ -267,6 +290,12 @@
 				<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/workiii-screenshot.gif" />
 				<img src="<?php echo get_template_directory_uri(); ?>/images/workiii-screenshot-overlay.png" />
 			</div>
+			<a class="work-iii-link"
+				data-6200="bottom: 90%;"
+				data-6800="bottom: 2%;"
+				href="http://loloverload.com/"
+				target="_blank"
+				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/workiii-external-link.png" /></a>
 		</div>
 		<div class="helix" style="top: -1000%; height: 1000%;">
 			<div class="strand _1"></div>
