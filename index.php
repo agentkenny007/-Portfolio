@@ -236,7 +236,9 @@
 		<div class="pyramids"
 			data-0="display: none;"
 			data-4750="display: block; bottom: -32.08334vw;"
-			data-5300="bottom: 0;">
+			data-5300="bottom: 0;"
+			data-6200="left: 0%;"
+			data-6800="left: -100%;">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/pyramids.png" />
 		</div>
 		<div class="work-ii-shadow"
@@ -253,6 +255,18 @@
 			data-6200="right: 100vw;">
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/workii-screenshot.gif" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/workii-screenshot-overlay.png" />
+		</div>
+		<div class="work-iii-background"
+			data-0="display: none;"
+			data-6200="display: block; left: 100%;"
+			data-6800="left: 0;">
+			<div class="work iii"
+				data-0="display: none;"
+				data-6200="display: block; top: -40%; left: 50%; transform: rotate(90deg);"
+				data-6800="top: 0%; left: 1.375%; transform: rotate(0deg);">
+				<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/workiii-screenshot.gif" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/workiii-screenshot-overlay.png" />
+			</div>
 		</div>
 		<div class="helix" style="top: -1000%; height: 1000%;">
 			<div class="strand _1"></div>
