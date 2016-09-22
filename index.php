@@ -166,6 +166,16 @@
 			data-4100="width: 60%; right: 100%; bottom: 10%; display: none;">
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemh-screenshot.gif" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
+    		<div class="links">
+    			<a class="external"
+    				href="http://tiy-ikennaugwuh-instagram-clone.surge.sh/"
+    				target="_blank"
+    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    			<a class="github"
+    				href="https://github.com/agentkenny007/InstaGram-Clone/"
+    				target="_blank"
+    				title="open github repo in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/github-link.png" /></a>
+    		</div>
 		</div>
 		<div class="item g"
 			data-0="display: none;"
@@ -174,6 +184,16 @@
 			data-3700="width: 60%; right: 100%; bottom: 10%; display: none;">
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemg-screenshot.gif" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
+    		<div class="links">
+    			<a class="external"
+    				href="http://tiy-ikennaugwuh-restaurant.surge.sh/"
+    				target="_blank"
+    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    			<a class="github"
+    				href="https://github.com/agentkenny007/Arcadia-Pub/"
+    				target="_blank"
+    				title="open github repo in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/github-link.png" /></a>
+    		</div>
 		</div>
 		<div class="item f"
 			data-0="display: none;"
@@ -182,6 +202,16 @@
 			data-3300="width: 60%; right: 100%; bottom: 10%; display: none;">
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemf-screenshot.gif" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
+    		<div class="links">
+    			<a class="external"
+    				href="https://agentkenny007.github.io/Clock/"
+    				target="_blank"
+    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    			<a class="github"
+    				href="https://github.com/agentkenny007/Clock/"
+    				target="_blank"
+    				title="open github repo in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/github-link.png" /></a>
+    		</div>
 		</div>
 		<div class="item e"
 			data-0="display: none;"
@@ -190,6 +220,16 @@
 			data-2900="width: 60%; right: 100%; bottom: 10%; display: none;">
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/iteme-screenshot.gif" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
+    		<div class="links">
+    			<a class="external"
+    				href="http://tiy-ikennaugwuh-memory-match.surge.sh/"
+    				target="_blank"
+    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    			<a class="github"
+    				href="https://github.com/agentkenny007/Memory-Match/"
+    				target="_blank"
+    				title="open github repo in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/github-link.png" /></a>
+    		</div>
 		</div>
 		<div class="item d"
 			data-0="display: none;"
@@ -198,6 +238,16 @@
 			data-2500="width: 60%; right: 100%; bottom: 10%; display: none;">
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemd-screenshot.gif" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
+    		<div class="links">
+    			<a class="external"
+    				href="https://agentkenny007.github.io/Accordion/"
+    				target="_blank"
+    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    			<a class="github"
+    				href="https://github.com/agentkenny007/Accordion/"
+    				target="_blank"
+    				title="open github repo in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/github-link.png" /></a>
+    		</div>
 		</div>
 		<div class="item c"
 			data-0="display: none;"
@@ -206,6 +256,16 @@
 			data-2100="width: 60%; right: 100%; bottom: 10%; display: none;">
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemc-screenshot.gif" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
+    		<div class="links">
+    			<a class="external"
+    				href="http://tiy-ikennaugwuh-music-app.surge.sh/"
+    				target="_blank"
+    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    			<a class="github"
+    				href="https://github.com/agentkenny007/Music-App/"
+    				target="_blank"
+    				title="open github repo in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/github-link.png" /></a>
+    		</div>
 		</div>
 		<div class="item b"
 			data-0="display: none;"
@@ -214,6 +274,16 @@
 			data-1700="width: 60%; right: 100%; bottom: 10%; display: none;">
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemb-screenshot.gif" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
+    		<div class="links">
+    			<a class="external"
+    				href="http://tiy-ikennaugwuh-responsive-design.surge.sh/"
+    				target="_blank"
+    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    			<a class="github"
+    				href="https://github.com/agentkenny007/Responsive-Design/"
+    				target="_blank"
+    				title="open github repo in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/github-link.png" /></a>
+    		</div>
 		</div>
 		<div class="item a"
 			data-0="display: none;"
@@ -222,6 +292,16 @@
 			data-1300="width: 60%; right: 100%; bottom: 10%; display: none;">
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itema-screenshot.gif" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
+    		<div class="links">
+    			<a class="external"
+    				href="http://agentkenny007.github.io/Calculator/calculator"
+    				target="_blank"
+    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    			<a class="github"
+    				href="https://github.com/agentkenny007/Calculator"
+    				target="_blank"
+    				title="open github repo in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/github-link.png" /></a>
+    		</div>
 		</div>
 		<div class="work i"
 			data-0="display: none;"
