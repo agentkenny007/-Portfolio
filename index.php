@@ -1,22 +1,53 @@
 <?php get_header(); ?>
-		<img class="background" data-0="opacity: 1;" data-800="opacity: 0;" src="<?php echo get_template_directory_uri(); ?>/images/background.jpg" />
+		<div class="vines"
+			data-3400="bottom: 200%; display: block;"
+			data-4100="bottom: -50%;"
+			data-5300="display: none;"></div>
+		<div class="work-i-background"
+			data-0="left: -61.8%; display: block;"
+			data-3800="left: 0;"
+			data-5300="display: none;"></div>
+		<div class="parallax"
+			data-0="display: block;"
+			data-4450="display: none;"></div>
+		<img class="background" data-0="opacity: 1;" data-800="opacity: 0; display: block;" src="<?php echo get_template_directory_uri(); ?>/images/background.jpg" />
+		<div class="backlight"
+			data-0="display: none;"
+			data-3800="display: block; background: rgba(255, 255, 255, 0);"
+			data-4100="background: rgba(255, 255, 255, 0.5); bottom: 38%;"
+			data-4300="background: rgba(255, 255, 255, 0.9); bottom: 62%;"
+			data-4450="background: rgba(255, 255, 255, 1); bottom: 100%; display: none;"></div>
 		<div class="name"
 			data-800="width: 45%; left: 10%; top: 61.8%;"
 			data-1000="width: 20%; left: 2%; top: 10%;">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/name.png" />
 		</div>
-		<div class="platform">
-			<div class="grid">
+		<div class="platform"
+			data-0="z-index: 0;"
+			data-4099="background: rgba(99, 99, 99, 1);"
+			data-4100="z-index: 1; background: rgba(99, 99, 99, 0);">
+			<div class="grid"
+				data-4100="top: 61.8%; z-index: 0;"
+				data-4800="top: -62%; z-index: 2;">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/homepage-grid.png" />
+				<div class="skylight"
+					data-0="display: none;"
+					data-4000="display: block; opacity: 0;"
+					data-4450="opacity: 1;">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/grid-skylight.png" />
+				</div>
 			</div>
 		</div>
-		<img class="raised-edge"
+		<div class="raised-edge"
 			data-0="display: block;"
 			data-275="display: none;"
 			data-600="display: block;"
 			data-750="display: none;"
 			data-800="display: block;"
-			src="<?php echo get_template_directory_uri(); ?>/images/raised-edge.jpg" />
+			data-4100="display: none;">
+			<div class="edge"></div>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/raised-edge.jpg" />
+		</div>
 		<div class="first-name"
 			data-0="width: 50%; left: 7%; bottom: 30%;"
 			data-275="width: 67%; left: 3%; bottom: 22%;"
@@ -189,6 +220,39 @@
 			data-1300="width: 60%; right: 100%; bottom: 10%; display: none;">
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itema-screenshot.gif" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
+		</div>
+		<div class="work i"
+			data-0="display: none;"
+			data-4000="display: block; bottom: -150%;"
+			data-4500="bottom: -8%;"
+			data-5300="display: none;">
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/worki-screenshot.gif" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/worki-screenshot-overlay.png" />
+		</div>
+		<div class="work-ii-background"
+			data-0="display: none;"
+			data-4750="display: block; opacity: 0;"
+			data-5300="opacity: 1;"></div>
+		<div class="pyramids"
+			data-0="display: none;"
+			data-4750="display: block; bottom: -32.08334vw;"
+			data-5300="bottom: 0;">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/pyramids.png" />
+		</div>
+		<div class="work-ii-shadow"
+			data-0="display: none;"
+			data-5200="display: block; right: -50vw; opacity: 0;"
+			data-5600="right: 0vw; opacity: 1;"
+			data-6200="right: 100vw;">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/workii-screenshot-shadow.png" />
+		</div>
+		<div class="work ii"
+			data-0="display: none;"
+			data-5200="display: block; top: -40%; right: -50vw;"
+			data-5600="top: 2%; right: 0vw;"
+			data-6200="right: 100vw;">
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/workii-screenshot.gif" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/workii-screenshot-overlay.png" />
 		</div>
 		<div class="helix" style="top: -1000%; height: 1000%;">
 			<div class="strand _1"></div>

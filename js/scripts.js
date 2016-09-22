@@ -29,9 +29,10 @@ function animateHelix(){
 }
 
 $(document)
-	.on('mousedown', function(){ clearTimeout(t); s.stopAnimateTo(); })
+	// .on('mousedown', function(){ clearTimeout(t); s.stopAnimateTo(); })
 	.on('mousedown', '.helix .selector', function(){
 		var activeStrand = Number($(this).attr('id')) + 1;
+		console.log(activeStrand);
 		$('.helix .strand._' + activeStrand).addClass('active'); })
 	.on('mouseenter', '.helix .selector', function(){
 		cleanHelix = spinStrands = false;
@@ -124,7 +125,7 @@ $(document)
 		}).scroll(function(){
 			console.log($(window).scrollTop());
 			if (t) clearTimeout(t);
-			if (!scrolling) t = setTimeout(function(){
+			if (scrolling) t = setTimeout(function(){
 				if ($(window).scrollTop() < 550) s.animateTo(0, { duration: 1500, easing: 'outCubic' });
 				else if ($(window).scrollTop() < 1250) s.animateTo(1000, { duration: 1250, easing: 'bouncer' });
 				else if ($(window).scrollTop() < 1650) s.animateTo(1400, { duration: 1250, easing: 'bouncer' });
