@@ -1,5 +1,5 @@
 /* Declare Variables */
-var i = 0, s, t, caf = 'cancelAnimationFrame', cleanHelix = false, dirtyStrand = 0, loading = false, raf = 'requestAnimationFrame', scrolling = false; selectedStrand = 0, spinStrands = true, strandSelected = false;
+var i = 0, s, t, caf = 'cancelAnimationFrame', cleanHelix = false, dirtyStrand = 0, loading = false, raf = 'requestAnimationFrame', selectedStrand = 0, snapTo = false, spinStrands = true, strandSelected = false;
 
 /* Declare Functions */
 function animateHelix(){
@@ -28,8 +28,55 @@ function animateHelix(){
 	requestAnimationFrame(animateHelix);
 }
 
+function scrollRegistry(toPlace){
+	switch (toPlace) {
+		case 0:
+			s.animateTo(0, { duration: 5500, easing: 'outCubic' });
+			break;
+		case 1:
+			s.animateTo(1000, { duration: Math.floor(Math.abs(($(window).scrollTop() - 1000) / 400)) * 1175 || 750, easing: 'swing' });
+			break;
+		case 2:
+			s.animateTo(1400, { duration: Math.floor(Math.abs(($(window).scrollTop() - 1000) / 400)) * 1175 || 750, easing: 'swing' });
+			break;
+		case 3:
+			s.animateTo(1800, { duration: Math.floor(Math.abs(($(window).scrollTop() - 1800) / 400)) * 1175 || 750, easing: 'swing' });
+			break;
+		case 4:
+			s.animateTo(2200, { duration: Math.floor(Math.abs(($(window).scrollTop() - 2200) / 400)) * 1175 || 750, easing: 'swing' });
+			break;
+		case 5:
+			s.animateTo(2600, { duration: Math.floor(Math.abs(($(window).scrollTop() - 2600) / 400)) * 1175 || 750, easing: 'swing' });
+			break;
+		case 6:
+			s.animateTo(3000, { duration: Math.floor(Math.abs(($(window).scrollTop() - 3000) / 400)) * 1175 || 750, easing: 'swing' });
+			break;
+		case 7:
+			s.animateTo(3400, { duration: Math.floor(Math.abs(($(window).scrollTop() - 3400) / 400)) * 1175 || 750, easing: 'swing' });
+			break;
+		case 8:
+			s.animateTo(3800, { duration: Math.floor(Math.abs(($(window).scrollTop() - 3800) / 400)) * 1175 || 750, easing: 'swing' });
+			break;
+		case 9:
+			s.animateTo(4700, { duration: Math.floor(Math.abs(($(window).scrollTop() - 4700) / 300)) * 1175 || 750, easing: 'swing' });
+			break;
+		case 10:
+			s.animateTo(5850, { duration: Math.floor(Math.abs(($(window).scrollTop() - 5850) / 300)) * 1175 || 750, easing: 'swing' });
+			break;
+		case 11:
+			s.animateTo(6800, { duration: Math.floor(Math.abs(($(window).scrollTop() - 6800) / 300)) * 1175 || 750, easing: 'swing' });
+			break;
+		default:
+			alert("Item is under-construction.");
+	}
+}
+
 $(document)
-	// .on('mousedown', function(){ clearTimeout(t); s.stopAnimateTo(); })
+	.on('click', '.helix .selector', function(){
+		var toStrand = Number($(this).attr('id')) - 1;
+		scrollRegistry(toStrand);
+	})
+	.on('mousedown', function(){ if (snapTo){ clearTimeout(t); s.stopAnimateTo(); } })
 	.on('mousedown', '.helix .selector', function(){
 		var activeStrand = Number($(this).attr('id')) + 1;
 		console.log(activeStrand);
@@ -37,9 +84,11 @@ $(document)
 	.on('mouseenter', '.helix .selector', function(){
 		cleanHelix = spinStrands = false;
 		dirtyStrand = 0;
-		selectedStrand  = Number($(this).attr('id'));
+		selectedStrand = Number($(this).attr('id'));
 		if (selectedStrand !== 17) $(`.helix .strand._${selectedStrand + 1}`).addClass('selected');
-		strandSelected = true; })
+		strandSelected = true;
+	 	$('.menu').stop(true, false).animate({ top: 0 });
+	 	$('.menu ul').stop(true, false).animate({ left: ((selectedStrand - 2) * -61.8) + '%' }, 750, 'easeOutElastic'); })
 	.on('mouseleave', '.helix', function(){
 		var strandPosition = Number($('.helix .strand._1').css('backgroundPosition').split(' ')[0].replace(/[^0-9-]/g, ''));
 		for (var i = 2; i < 19; i++){
@@ -52,7 +101,8 @@ $(document)
 		strandSelected = false;
 		spinStrands = true; })
 	.on('mouseleave', '.helix .selector', function(){
-		$('.helix .selected.strand').css('background-position', 0).removeClass('selected'); })
+		$('.helix .selected.strand').css('background-position', 0).removeClass('selected');
+		$('.menu').stop(true, false).animate({ top: '-38.2%' }); })
 	.on('mouseup', '.helix .selector', function(){
 	   var activeStrand = Number($(this).attr('id')) + 1;
 	   $('.helix .strand._' + activeStrand).removeClass('active'); })
@@ -74,7 +124,6 @@ $(document)
 		requestAnimationFrame(animateHelix);
 		$('.helix').animate({ 'height' : '120%', 'top' : '-10%' }, 4500, 'easeOutCirc');
 
-		// s = skrollr.init({ skrollrBody: 'wrapper' });
 		s = skrollr.init({
 			easing: {
 				bouncer: function (p) {
@@ -83,7 +132,8 @@ $(document)
 		        inverted: function(p) {
 		            return 1 - p;
 		        }
-		    }
+		    },
+			skrollrBody: 'wrapper'
 		});
 
 		/* Swift smack on the wrist for IE users */
@@ -125,7 +175,7 @@ $(document)
 		}).scroll(function(){
 			console.log($(window).scrollTop());
 			if (t) clearTimeout(t);
-			if (scrolling) t = setTimeout(function(){
+			if (snapTo) t = setTimeout(function(){
 				if ($(window).scrollTop() < 550) s.animateTo(0, { duration: 1500, easing: 'outCubic' });
 				else if ($(window).scrollTop() < 1250) s.animateTo(1000, { duration: 1250, easing: 'bouncer' });
 				else if ($(window).scrollTop() < 1650) s.animateTo(1400, { duration: 1250, easing: 'bouncer' });

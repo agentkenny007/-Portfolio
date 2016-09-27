@@ -134,6 +134,32 @@ img.background { position: fixed; top: 0; width: 100%; height: 100%; z-index: -2
 .contact .sent-error { width: 150px; height: 221px; margin: -111px 0 0 -75px; background: url(../images/error.png) no-repeat; }
 
 /* Start the show */
+.menu {
+	position: fixed;
+	left: 0;
+	top: -38.2%;
+	width: 100%;
+	height: 38.2%;
+	background: url(../images/menu-bg.png) 0/100% 100% no-repeat;
+	z-index: 1;
+}
+.menu ul {
+	position: absolute;
+	list-style: none;
+	width: 927%;
+	margin: 0;
+}
+.menu li {
+	float: left;
+	width: 6.666667%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.menu p {
+	font-size: 2em;
+	color: orange;
+	margin: 0;
+}
 .heading {
 	position: fixed;
 	width: 50%;
@@ -294,6 +320,7 @@ img.background { position: fixed; top: 0; width: 100%; height: 100%; z-index: -2
 	opacity: 0;
 }
 .work-ii-link {
+	display: none;
 	position: fixed;
 	left: 4%;
 	bottom: 12%;

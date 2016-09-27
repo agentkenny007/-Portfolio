@@ -314,7 +314,8 @@
 		<div class="work-i-links"
 			data-0="display: none;"
 			data-4400="display: block; left: -30%;"
-			data-4700="left: 20%;">
+			data-4700="left: 20%;"
+			data-5300="display: none;">
 			<a class="work-i-link"
 				href="http://grapevine.surge.sh/"
 				target="_blank"
@@ -354,7 +355,8 @@
 			<img src="<?php echo get_template_directory_uri(); ?>/images/workii-screenshot-overlay.png" />
 		</div>
 		<a class="work-ii-link"
-			data-5100="left: -15%;"
+			data-0="display: none;"
+			data-5100="display: block; left: -15%;"
 			data-5750="left: 4%;"
 			href="http://bathshebabeauty.com/"
 			target="_blank"
@@ -364,11 +366,12 @@
 			data-6200="display: block; left: 100%;"
 			data-6800="left: 0;">
 			<div class="work iii"
+				title="LOL Overload!"
 				data-0="display: none;"
 				data-6200="display: block; top: -40%; left: 50%; transform: rotate(90deg);"
 				data-6800="top: 0%; left: 1.375%; transform: rotate(0deg);">
 				<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/workiii-screenshot.gif" />
-				<img src="<?php echo get_template_directory_uri(); ?>/images/workiii-screenshot-overlay.png" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/workiii-screenshot-overlay.png" alt="LOL Overload!" />
 			</div>
 			<a class="work-iii-link"
 				data-6200="bottom: 90%;"
@@ -376,6 +379,70 @@
 				href="http://loloverload.com/"
 				target="_blank"
 				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/workiii-external-link.png" /></a>
+		</div>
+		<div class="menu">
+			<ul>
+				<li>
+					<h3>registry item a:</h3>
+					<p>Kenny's Cool Calculator</p>
+				</li>
+				<li>
+					<h3>registry item b:</h3>
+					<p>Responsive Design</p>
+				</li>
+				<li>
+					<h3>registry item c:</h3>
+					<p>MuzAapp!</p>
+				</li>
+				<li>
+					<h3>registry item d:</h3>
+					<p>Simple CSS Accordion</p>
+				</li>
+				<li>
+					<h3>registry item e:</h3>
+					<p>Emoji Match!</p>
+				</li>
+				<li>
+					<h3>registry item f:</h3>
+					<p>A JavaScript Clock</p>
+				</li>
+				<li>
+					<h3>registry item g:</h3>
+					<p>Arcadia Pub</p>
+				</li>
+				<li>
+					<h3>registry item h:</h3>
+					<p>PhotoGram</p>
+				</li>
+				<li>
+					<h3>Grand Work I:</h3>
+					<p>GrapeVine</p>
+				</li>
+				<li>
+					<h3>Grand Work II:</h3>
+					<p>BathSheba Beauty Products</p>
+				</li>
+				<li>
+					<h3>Grand Work III:</h3>
+					<p>LOL Overload!</p>
+				</li>
+				<li>
+					<h3>Grand Work IV:</h3>
+					<p>Under Construction</p>
+				</li>
+				<li>
+					<h3>Grand Work V:</h3>
+					<p>Under Construction</p>
+				</li>
+				<li>
+					<h3>Grand Work VI:</h3>
+					<p>Under Construction</p>
+				</li>
+				<li>
+					<h3>Grand Work VII:</h3>
+					<p>Under Construction</p>
+				</li>
+			</ul>
 		</div>
 		<div class="helix" style="top: -1000%; height: 1000%;">
 			<div class="strand _1"></div>
