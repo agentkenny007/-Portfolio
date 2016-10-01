@@ -168,10 +168,10 @@
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemh-screenshot.gif" alt="PhotoGram" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
-    			<a class="external"
+    			<a class="popup"
     				href="http://tiy-ikennaugwuh-instagram-clone.surge.sh/"
     				target="_blank"
-    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/popup-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/InstaGram-Clone/"
     				target="_blank"
@@ -187,10 +187,10 @@
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemg-screenshot.gif" alt="Arcadia Pub" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
-    			<a class="external"
+    			<a class="popup"
     				href="http://tiy-ikennaugwuh-restaurant.surge.sh/"
     				target="_blank"
-    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/popup-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/Arcadia-Pub/"
     				target="_blank"
@@ -206,10 +206,10 @@
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemf-screenshot.gif" alt="A JavaScript Clock" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
-    			<a class="external"
-    				href="https://agentkenny007.github.io/Clock/"
+    			<a class="popup"
+    				href="http://agentkenny007.github.io/Clock/"
     				target="_blank"
-    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/popup-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/Clock/"
     				target="_blank"
@@ -225,10 +225,10 @@
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/iteme-screenshot.gif" alt="Emoji Match!" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
-    			<a class="external"
+    			<a class="popup"
     				href="http://tiy-ikennaugwuh-memory-match.surge.sh/"
     				target="_blank"
-    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/popup-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/Memory-Match/"
     				target="_blank"
@@ -244,10 +244,10 @@
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemd-screenshot.gif" alt="Simple CSS Accordion" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
-    			<a class="external"
-    				href="https://agentkenny007.github.io/Accordion/"
+    			<a class="popup"
+    				href="http://agentkenny007.github.io/Accordion/"
     				target="_blank"
-    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/popup-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/Accordion/"
     				target="_blank"
@@ -263,10 +263,10 @@
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemc-screenshot.gif" alt="MuzAapp!" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
-    			<a class="external"
+    			<a class="popup"
     				href="http://tiy-ikennaugwuh-music-app.surge.sh/"
     				target="_blank"
-    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/popup-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/Music-App/"
     				target="_blank"
@@ -282,10 +282,10 @@
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemb-screenshot.gif" alt="Responsive Design" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
-    			<a class="external"
+    			<a class="popup"
     				href="http://tiy-ikennaugwuh-responsive-design.surge.sh/"
     				target="_blank"
-    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/popup-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/Responsive-Design/"
     				target="_blank"
@@ -301,10 +301,10 @@
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itema-screenshot.gif" alt="Kenny's Cool Calculator" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
-    			<a class="external"
+    			<a class="popup"
     				href="http://agentkenny007.github.io/Calculator/calculator"
     				target="_blank"
-    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/popup-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/Calculator"
     				target="_blank"
@@ -328,7 +328,7 @@
 			<a class="work-i-link"
 				href="http://grapevine.surge.sh/"
 				target="_blank"
-				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/worki-external-link.png" /></a>
+				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/worki-popup-link.png" /></a>
 			<a class="work-i-github"
 				href="https://github.com/Grapevine-App/"
 				target="_blank"
@@ -370,7 +370,7 @@
 			data-5750="left: 4%;"
 			href="http://bathshebabeauty.com/"
 			target="_blank"
-			title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/workii-external-link.png" /></a>
+			title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/workii-popup-link.png" /></a>
 		<div class="work-iii-background"
 			data-0="display: none;"
 			data-6200="display: block; left: 100%;"
@@ -388,7 +388,7 @@
 				data-6800="bottom: 2%;"
 				href="http://loloverload.com/"
 				target="_blank"
-				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/workiii-external-link.png" /></a>
+				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/workiii-popup-link.png" /></a>
 		</div>
 		<div class="menu">
 			<ul>
@@ -494,7 +494,7 @@
 		</div>
 		<div class="vista">
 			<span class="hide"></span>
-			<span class="hide button"></span>
 			<div class="viewport"><iframe frameborder="0"></iframe></div>
+			<span class="hide button"></span>
 		</div>
 <?php get_footer(); ?>
