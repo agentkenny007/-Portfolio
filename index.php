@@ -160,17 +160,18 @@
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-shadow.png" />
 		</div>
 		<div class="item h"
+			title="PhotoGram"
 			data-0="display: none;"
 			data-3400="width: 30%; bottom: 100%; -webkit-box-reflect: below 350% linear-gradient(transparent 99%, rgba(255, 255, 255, 0)); display: block;"
 			data-3800="width: 50%; bottom: 25%; right: 38.2%; -webkit-box-reflect: below -18% linear-gradient(transparent 60%, rgba(255, 255, 255, 1));"
 			data-4100="width: 60%; right: 100%; bottom: 10%; display: none;">
-			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemh-screenshot.gif" />
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemh-screenshot.gif" alt="PhotoGram" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
     			<a class="external"
     				href="http://tiy-ikennaugwuh-instagram-clone.surge.sh/"
     				target="_blank"
-    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/InstaGram-Clone/"
     				target="_blank"
@@ -178,17 +179,18 @@
     		</div>
 		</div>
 		<div class="item g"
+			title="Arcadia Pub"
 			data-0="display: none;"
 			data-3000="width: 30%; bottom: 100%; -webkit-box-reflect: below 350% linear-gradient(transparent 99%, rgba(255, 255, 255, 0)); display: block;"
 			data-3400="width: 50%; bottom: 25%; right: 38.2%; -webkit-box-reflect: below -18% linear-gradient(transparent 60%, rgba(255, 255, 255, 1));"
 			data-3700="width: 60%; right: 100%; bottom: 10%; display: none;">
-			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemg-screenshot.gif" />
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemg-screenshot.gif" alt="Arcadia Pub" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
     			<a class="external"
     				href="http://tiy-ikennaugwuh-restaurant.surge.sh/"
     				target="_blank"
-    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/Arcadia-Pub/"
     				target="_blank"
@@ -196,17 +198,18 @@
     		</div>
 		</div>
 		<div class="item f"
+			title="A JavaScript Clock"
 			data-0="display: none;"
 			data-2600="width: 30%; bottom: 100%; -webkit-box-reflect: below 350% linear-gradient(transparent 99%, rgba(255, 255, 255, 0)); display: block;"
 			data-3000="width: 50%; bottom: 25%; right: 38.2%; -webkit-box-reflect: below -18% linear-gradient(transparent 60%, rgba(255, 255, 255, 1));"
 			data-3300="width: 60%; right: 100%; bottom: 10%; display: none;">
-			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemf-screenshot.gif" />
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemf-screenshot.gif" alt="A JavaScript Clock" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
     			<a class="external"
     				href="https://agentkenny007.github.io/Clock/"
     				target="_blank"
-    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/Clock/"
     				target="_blank"
@@ -214,17 +217,18 @@
     		</div>
 		</div>
 		<div class="item e"
+			title="Emoji Match!"
 			data-0="display: none;"
 			data-2200="width: 30%; bottom: 100%; -webkit-box-reflect: below 350% linear-gradient(transparent 99%, rgba(255, 255, 255, 0)); display: block;"
 			data-2600="width: 50%; bottom: 25%; right: 38.2%; -webkit-box-reflect: below -18% linear-gradient(transparent 60%, rgba(255, 255, 255, 1));"
 			data-2900="width: 60%; right: 100%; bottom: 10%; display: none;">
-			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/iteme-screenshot.gif" />
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/iteme-screenshot.gif" alt="Emoji Match!" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
     			<a class="external"
     				href="http://tiy-ikennaugwuh-memory-match.surge.sh/"
     				target="_blank"
-    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/Memory-Match/"
     				target="_blank"
@@ -232,17 +236,18 @@
     		</div>
 		</div>
 		<div class="item d"
+			title="Simple CSS Accordion"
 			data-0="display: none;"
 			data-1800="width: 30%; bottom: 100%; -webkit-box-reflect: below 350% linear-gradient(transparent 99%, rgba(255, 255, 255, 0)); display: block;"
 			data-2200="width: 50%; bottom: 25%; right: 38.2%; -webkit-box-reflect: below -18% linear-gradient(transparent 60%, rgba(255, 255, 255, 1));"
 			data-2500="width: 60%; right: 100%; bottom: 10%; display: none;">
-			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemd-screenshot.gif" />
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemd-screenshot.gif" alt="Simple CSS Accordion" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
     			<a class="external"
     				href="https://agentkenny007.github.io/Accordion/"
     				target="_blank"
-    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/Accordion/"
     				target="_blank"
@@ -250,17 +255,18 @@
     		</div>
 		</div>
 		<div class="item c"
+			title="MuzAapp!"
 			data-0="display: none;"
 			data-1400="width: 30%; bottom: 100%; -webkit-box-reflect: below 350% linear-gradient(transparent 99%, rgba(255, 255, 255, 0)); display: block;"
 			data-1800="width: 50%; bottom: 25%; right: 38.2%; -webkit-box-reflect: below -18% linear-gradient(transparent 60%, rgba(255, 255, 255, 1));"
 			data-2100="width: 60%; right: 100%; bottom: 10%; display: none;">
-			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemc-screenshot.gif" />
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemc-screenshot.gif" alt="MuzAapp!" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
     			<a class="external"
     				href="http://tiy-ikennaugwuh-music-app.surge.sh/"
     				target="_blank"
-    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/Music-App/"
     				target="_blank"
@@ -268,17 +274,18 @@
     		</div>
 		</div>
 		<div class="item b"
+			title="Responsive Design"
 			data-0="display: none;"
 			data-1000="width: 30%; bottom: 100%; -webkit-box-reflect: below 350% linear-gradient(transparent 99%, rgba(255, 255, 255, 0)); display: block;"
 			data-1400="width: 50%; bottom: 25%; right: 38.2%; -webkit-box-reflect: below -18% linear-gradient(transparent 60%, rgba(255, 255, 255, 1));"
 			data-1700="width: 60%; right: 100%; bottom: 10%; display: none;">
-			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemb-screenshot.gif" />
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itemb-screenshot.gif" alt="Responsive Design" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
     			<a class="external"
     				href="http://tiy-ikennaugwuh-responsive-design.surge.sh/"
     				target="_blank"
-    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/Responsive-Design/"
     				target="_blank"
@@ -286,17 +293,18 @@
     		</div>
 		</div>
 		<div class="item a"
+			title="Kenny's Cool Calculator"
 			data-0="display: none;"
 			data-600="width: 30%; bottom: 100%; -webkit-box-reflect: below 350% linear-gradient(transparent 99%, rgba(255, 255, 255, 0)); display: block;"
 			data-1000="width: 50%; bottom: 25%; right: 38.2%; -webkit-box-reflect: below -18% linear-gradient(transparent 60%, rgba(255, 255, 255, 1));"
 			data-1300="width: 60%; right: 100%; bottom: 10%; display: none;">
-			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itema-screenshot.gif" />
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/itema-screenshot.gif" alt="Kenny's Cool Calculator" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/item-screenshot-overlay.png" />
     		<div class="links">
     			<a class="external"
     				href="http://agentkenny007.github.io/Calculator/calculator"
     				target="_blank"
-    				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
+    				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/external-link.png" /></a>
     			<a class="github"
     				href="https://github.com/agentkenny007/Calculator"
     				target="_blank"
@@ -304,11 +312,12 @@
     		</div>
 		</div>
 		<div class="work i"
+			title="GrapeVine"
 			data-0="display: none;"
 			data-4000="display: block; bottom: -150%;"
 			data-4500="bottom: -8%;"
 			data-5300="display: none;">
-			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/worki-screenshot.gif" />
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/worki-screenshot.gif" alt="GrapeVine" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/worki-screenshot-overlay.png" />
 		</div>
 		<div class="work-i-links"
@@ -319,7 +328,7 @@
 			<a class="work-i-link"
 				href="http://grapevine.surge.sh/"
 				target="_blank"
-				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/worki-external-link.png" /></a>
+				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/worki-external-link.png" /></a>
 			<a class="work-i-github"
 				href="https://github.com/Grapevine-App/"
 				target="_blank"
@@ -347,11 +356,12 @@
 			<img src="<?php echo get_template_directory_uri(); ?>/images/workii-screenshot-shadow.png" />
 		</div>
 		<div class="work ii"
+			title="BathSheba Beauty Products"
 			data-0="display: none;"
 			data-5200="display: block; top: -40%; right: -50vw;"
 			data-5600="top: 2%; right: 0vw;"
 			data-6200="right: 100vw;">
-			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/workii-screenshot.gif" />
+			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/workii-screenshot.gif" alt="BathSheba Beauty Products" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/workii-screenshot-overlay.png" />
 		</div>
 		<a class="work-ii-link"
@@ -360,7 +370,7 @@
 			data-5750="left: 4%;"
 			href="http://bathshebabeauty.com/"
 			target="_blank"
-			title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/workii-external-link.png" /></a>
+			title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/workii-external-link.png" /></a>
 		<div class="work-iii-background"
 			data-0="display: none;"
 			data-6200="display: block; left: 100%;"
@@ -370,15 +380,15 @@
 				data-0="display: none;"
 				data-6200="display: block; top: -40%; left: 50%; transform: rotate(90deg);"
 				data-6800="top: 0%; left: 1.375%; transform: rotate(0deg);">
-				<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/workiii-screenshot.gif" />
-				<img src="<?php echo get_template_directory_uri(); ?>/images/workiii-screenshot-overlay.png" alt="LOL Overload!" />
+				<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/workiii-screenshot.gif" alt="LOL Overload!" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/workiii-screenshot-overlay.png" />
 			</div>
 			<a class="work-iii-link"
 				data-6200="bottom: 90%;"
 				data-6800="bottom: 2%;"
 				href="http://loloverload.com/"
 				target="_blank"
-				title="open link in a new tab"><img src="<?php echo get_template_directory_uri(); ?>/images/workiii-external-link.png" /></a>
+				title="open pop-up"><img src="<?php echo get_template_directory_uri(); ?>/images/workiii-external-link.png" /></a>
 		</div>
 		<div class="menu">
 			<ul>
@@ -481,5 +491,10 @@
 			<div class="selector _15" id="15"></div>
 			<div class="selector _16" id="16"></div>
 			<div class="selector _17" id="17"></div>
+		</div>
+		<div class="vista">
+			<span class="hide"></span>
+			<span class="hide button"></span>
+			<div class="viewport"><iframe frameborder="0"></iframe></div>
 		</div>
 <?php get_footer(); ?>

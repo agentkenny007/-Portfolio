@@ -72,9 +72,25 @@ function scrollRegistry(toPlace){
 }
 
 $(document)
+	.on('click', 'a', function(){
+		if (!this.href.startsWith('https')){
+			$('iframe').attr('src', "").attr('src', this.href);
+			$('.vista').fadeIn('slow', function(){
+				$(this).find('.viewport').animate({ margin: '-45vh -45vw', width: '90%', height: '90%' }, 1250, 'easeOutElastic', function(){
+					$('iframe').animate({ opacity: 1}, 750, 'easeOutQuint');
+				});
+			});
+			return false;
+		}
+	})
 	.on('click', '.helix .selector', function(){
 		var toStrand = Number($(this).attr('id')) - 1;
 		scrollRegistry(toStrand);
+	})
+	.on('click', '.vista .hide', function(){
+		$('iframe').animate({ opacity: 0}, 750, 'easeOutQuint');
+		$('.vista .viewport').animate({ margin: '0vh 0vw', width: 0, height: 0 }, 1250, 'easeOutElastic');
+		$('.vista').fadeOut(1500);
 	})
 	.on('mousedown', function(){ if (snapTo){ clearTimeout(t); s.stopAnimateTo(); } })
 	.on('mousedown', '.helix .selector', function(){
