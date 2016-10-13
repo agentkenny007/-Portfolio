@@ -2,6 +2,14 @@
 var i = 0, s, t, caf = 'cancelAnimationFrame', cleanHelix = false, dirtyStrand = 0, loading = false, raf = 'requestAnimationFrame', selectedStrand = 0, snapTo = false, spinStrands = true, strandSelected = false;
 
 /* Declare Functions */
+function activatePlatform(activate){
+	if (activate == false){
+		$('body').removeClass('portrait');
+	} else {
+		$('body').addClass('portrait');
+	}
+}
+
 function animateHelix(){
 	if (cleanHelix) $('.strand._' + dirtyStrand++).css('background-position', 0);
 	if (dirtyStrand === 19){
@@ -137,8 +145,10 @@ $(document)
 			$('.helix .strand._' + strand).addClass('selected');
 		} })
 	.ready(function(){
+		if ($(window).width() / $(window).height() < 7.5 / 5.65) activatePlatform();
 		requestAnimationFrame(animateHelix);
 		$('.helix').animate({ 'height' : '120%', 'top' : '-10%' }, 4500, 'easeOutCirc');
+		$('.item').before(function(){ return $(this).clone().addClass('layerf'); });
 
 		s = skrollr.init({
 			easing: {
@@ -184,6 +194,7 @@ $(document)
 
 		var firing = false; // prevents overloading of window.scroll function
 		$(window).resize(function(){
+			if ($(window).width() / $(window).height() < 7.5 / 5.65) activatePlatform(); else activatePlatform(false);
 			$('#logo img').css({
 				'margin-top' : $('#logo img').width() * -0.5,
 				'margin-left' : $('#logo img').width() * -0.5

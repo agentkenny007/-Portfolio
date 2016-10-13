@@ -27,7 +27,8 @@
 		<div class="platform"
 			data-0="z-index: 0;"
 			data-4099="background: rgba(99, 99, 99, 1);"
-			data-4100="z-index: 1; background: rgba(99, 99, 99, 0);">
+			data-4120="z-index: 1; background: rgba(99, 99, 99, 0); display: block;"
+			data-4800="display: none;">
 			<div class="grid"
 				data-4100="top: 61.8%; z-index: 0;"
 				data-4800="top: -62%; z-index: 2;">
@@ -39,7 +40,15 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/images/grid-skylight.png" />
 				</div>
 			</div>
+			<div class="ledge"
+				data-4150="top: 8px;"
+				data-4200="top: 400px;"></div>
 		</div>
+		<div class="crater"
+			data-0="display: none;"
+			data-800="display: block;"
+			data-4100="opacity: 1;"
+			data-4102="opacity: 0;"></div>
 		<div class="raised-edge"
 			data-0="display: block;"
 			data-275="display: none;"
@@ -314,8 +323,8 @@
 		<div class="work i"
 			title="GrapeVine"
 			data-0="display: none;"
-			data-4000="display: block; bottom: -150%;"
-			data-4500="bottom: -8%;"
+			data-4000="display: block; top: 150%;"
+			data-4500="top: 37.5%;"
 			data-5300="display: none;">
 			<img class="screenshot" src="<?php echo get_template_directory_uri(); ?>/images/worki-screenshot.gif" alt="GrapeVine" />
 			<img src="<?php echo get_template_directory_uri(); ?>/images/worki-screenshot-overlay.png" />
